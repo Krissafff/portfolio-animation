@@ -27,6 +27,28 @@
     }
 }
 
+#logo {
+    animation: logo-text 7s ease 0s forwards;
+}
+
+@keyframes logo-text {
+    0% {
+        fill-opacity: 0;
+        stroke-dasharray: 10 500;
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        opacity: 1;
+    }
+    30% {
+        fill-opacity: 0;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 0;
+        stroke-width: 1;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 #H {
     height: 50px;
     width: 50px;
