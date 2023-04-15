@@ -1,0 +1,121 @@
+.circulo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 861px;
+    height: 944px;
+    left: -247px;
+    top: 230px;
+    opacity: 0.4;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#H {
+    height: 50px;
+    width: 50px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 2px;
+    stroke-dasharray: 4500;
+    animation: draw 12s linear infinite alternate-reverse;
+}
+
+@keyframes draw {
+    0% {
+        fill-opacity: 1;
+        stroke-dasharray: 1 1000;
+        stroke-dashoffset: 0;
+        stroke-width: 1;
+        opacity: 1;
+        transform: translate3d(0, 0px, 0);
+    }
+    30% {
+    }
+    60%,
+    90% {
+        fill-opacity: 1;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 0;
+        stroke-width: 1;
+        opacity: 1;
+    }
+}
+
+.bar-loader {
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(104.82deg, #000000 0%, #03d2ff 100%);
+        width: 50%;
+        height: 100%;
+
+        animation: bar-loader 4s ease forwards;
+    }
+}
+
+@keyframes bar-loader {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.bar-loader {
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(104.82deg, #000000 0%, #03d2ff 100%);
+        width: 50%;
+        height: 100%;
+
+        animation: bar-loader 4s ease forwards;
+    }
+}
+
+@keyframes bar-loader {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="js/svg-inject.min.js"></script>
+  <title>teste</title>
+</head>
+<body>
+
+      
+    <!--================================-->
+    <!--============ HEADER ============-->
+    <!--================================-->
+    <header>
+      <nav class="menu">
+        <div>
+          <div class="flex-start-row ml-5">
+              <div>
+                  <a href="#" class="disappear link-menu color-effect">Home</a>
+              </div>
+              <div class="ml-3">
+                  <a href="#" class="disappear link-menu color-effect">About</a>
+              </div>
+          </div>
+      </div>
+          <div class="logo mt-1">
+            <svg width="95" height="108" viewBox="0 0 95 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="H" d="M1 1V52L8.5 45V10H28.5V42L1 63V106.5H39V65.5L66.5 45V10H86V42L57.5 63V106.5H94V56L86 63V97.5H67.5V67L94 45V1H56V42L28.5 63V97.5H10.5V67L39 45V1H1Z" stroke="white" stroke-width="2"/>
+            </svg>   
+          </div>
+
+          <div>
+              <div class="flex-start-row mr-5">
+                  <div>
+                      <a href="#" class="disappear link-menu color-effect">Work</a>
+                  </div>
+                  <div class="ml-3">
+                      <a href="#" class="disappear link-menu color-effect">Contact</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+
+
+
+
+    <!--==============================-->
+    <!--============ HERO ============-->
+    <!--==============================-->
+    <div class="bg-black relative hidden py-3 ">
+      <img src="./svgs/shadow.png" alt="" class="shadow">
+      <img src="./svgs/shadow2.png" alt="" class="shadow2">
+      <img src="./svgs/circulo.png" alt="" class="circulo">
+
+      <div class="loading-page" style="z-index: 9999;">
+        <svg width="95" height="107" viewBox="0 0 95 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="logo" d="M1 1V52L8.5 45V10H28.5V42L1 63V106.5H39V65.5L66.5 45V10H86V42L57.5 63V106.5H94V56L86 63V97.5H67.5V67L94 45V1H56V42L28.5 63V97.5H10.5V67L39 45V1H1Z" fill="#F7F7F7" stroke="white"/>
+        </svg>
+        
+        <div class="name-container">
+        <div class="bar-loader"></div>
+        </div>
+        
+       </div>
+
+      <section class="container flex-center hero">
+          <div class="row">
+              <div class="grid-7 mt-9">
+                  <h6 class="h7 color-effect">Henrique Rodrigues</h6>
+                  <div class="">
+                      <h3 class="color-effect2" style="font-weight: bold;">
+                          FRONT END DEVELOPER
+                      </h3>
+                  </div>
+                  
+                  <p class="mt-3" style="max-width: 520px;">
+                      Lorem ipsum dolor sit amet consectetur. Et ut tempus 
+                      facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. 
+                  </p>
+
+                  <a href="#" class="btn mt-4">Projects</a>
+                  <div class="mt-10">
+                  <img src="./svgs/github.svg" class="icon" alt="" onload="SVGInject(this)" /> 
+                  <img src="./svgs/instagram.svg" class="icon ml-5" alt="" onload="SVGInject(this)" /> 
+                  <img src="./svgs/linkedin.svg" class="icon ml-5" alt="" onload="SVGInject(this)" /> 
+                  </div>
+                </div>
+
+              <div class="grid-5 flex-end-row">
+                <img src="./svgs/Celular.svg" class="icon-celular" alt="" onload="SVGInject(this)" /> 
+            </div>
+          </div>
+      </section>
+    </div>
+
+    
+    
+
+    <!--<div class="container flex-center hero ">
+
+    </div>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+<script src="./js/script.js"></script>
+<script>
+    gsap.fromTo(
+  ".loading-page",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    display: "none",
+    duration: 1.5,
+    delay: 5,
+  }
+);
+
+gsap.fromTo(
+  ".logo-name",
+  {
+    y: 50,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.5,
+  },
+);
+
+gsap.fromTo(
+    ".menu",
+    {
+    y: 0,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 5,
+  },
+);
+</script>
+
+</body>
+</html>
